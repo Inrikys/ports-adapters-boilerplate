@@ -1,6 +1,6 @@
 package com.cleanarchitecture.exemplo.adapters.out.repository.entity;
 
-import com.cleanarchitecture.exemplo.application.core.domain.Usuario;
+import com.cleanarchitecture.exemplo.application.core.domain.Zupper;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -12,7 +12,7 @@ import java.time.LocalDate;
 @NoArgsConstructor
 @AllArgsConstructor
 @Getter
-public class UsuarioEntity {
+public class ZupperEntity {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -34,22 +34,27 @@ public class UsuarioEntity {
     @JoinColumn(name = "id_endereco", referencedColumnName = "id")
     private EnderecoEntity endereco;
 
-    public UsuarioEntity(Usuario usuario) {
-        this.nome = usuario.getNome();
-        this.sobrenome = usuario.getSobrenome();
-        this.dataNascimento = usuario.getDataNascimento();
-        this.celular = usuario.getCelular();
-        this.endereco = new EnderecoEntity(usuario.getEndereco());
+    @Column(nullable = false, unique = true)
+    private String email;
+
+    public ZupperEntity(Zupper zupper) {
+        this.nome = zupper.getNome();
+        this.sobrenome = zupper.getSobrenome();
+        this.dataNascimento = zupper.getDataNascimento();
+        this.celular = zupper.getCelular();
+        this.endereco = new EnderecoEntity(zupper.getEndereco());
+        this.email = zupper.getEmail();
     }
 
-    public Usuario toUsuario() {
-        return Usuario.builder()
+    public Zupper toZupper() {
+        return Zupper.builder()
                 .setId(id)
                 .setNome(nome)
                 .setSobrenome(sobrenome)
                 .setDataNascimento(dataNascimento)
                 .setCelular(celular)
                 .setEndereco(endereco.toEndereco())
+                .setEmail(email)
                 .build();
     }
 }

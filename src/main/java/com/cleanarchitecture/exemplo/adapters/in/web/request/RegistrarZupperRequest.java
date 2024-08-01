@@ -1,6 +1,6 @@
 package com.cleanarchitecture.exemplo.adapters.in.web.request;
 
-import com.cleanarchitecture.exemplo.application.core.domain.Usuario;
+import com.cleanarchitecture.exemplo.application.core.domain.Zupper;
 import com.fasterxml.jackson.annotation.JsonFormat;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import jakarta.validation.constraints.NotBlank;
@@ -14,7 +14,7 @@ import java.time.LocalDate;
 @Getter
 @AllArgsConstructor
 @NoArgsConstructor
-public class RegistrarUsuarioRequest {
+public class RegistrarZupperRequest {
 
     @NotBlank
     @JsonProperty("nome")
@@ -41,12 +41,17 @@ public class RegistrarUsuarioRequest {
     @JsonProperty("numero")
     private String numero;
 
-    public Usuario toUsuario() {
-        return Usuario.builder()
+    @NotBlank
+    @JsonProperty("email")
+    private String email;
+
+    public Zupper toZupper() {
+        return Zupper.builder()
                 .setNome(nome)
                 .setSobrenome(sobrenome)
                 .setDataNascimento(dataNascimento)
                 .setCelular(celular)
+                .setEmail(email)
                 .build();
     }
 }

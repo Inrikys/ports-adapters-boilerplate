@@ -2,7 +2,7 @@ package com.cleanarchitecture.exemplo.application.core.domain;
 
 import java.time.LocalDate;
 
-public class Usuario {
+public class Zupper {
 
     private Long id;
 
@@ -16,13 +16,16 @@ public class Usuario {
 
     private Endereco endereco;
 
-    public Usuario(Long id, String nome, String sobrenome, LocalDate dataNascimento, String celular, Endereco endereco) {
+    private String email;
+
+    public Zupper(Long id, String nome, String sobrenome, LocalDate dataNascimento, String celular, Endereco endereco, String email) {
         this.id = id;
         this.nome = nome;
         this.sobrenome = sobrenome;
         this.dataNascimento = dataNascimento;
         this.celular = celular;
         this.endereco = endereco;
+        this.email = email;
     }
 
     public Long getId() {
@@ -54,6 +57,10 @@ public class Usuario {
         this.endereco.setNumero(numero);
     }
 
+    public String getEmail() {
+        return email;
+    }
+
     public static Builder builder() {
         return new Builder();
     }
@@ -71,6 +78,8 @@ public class Usuario {
         private String celular;
 
         private Endereco endereco;
+
+        private String email;
 
         public Builder setId(Long id) {
             this.id = id;
@@ -102,8 +111,13 @@ public class Usuario {
             return this;
         }
 
-        public Usuario build() {
-            return new Usuario(id, nome, sobrenome, dataNascimento, celular, endereco);
+        public Builder setEmail(String email) {
+            this.email = email;
+            return this;
+        }
+
+        public Zupper build() {
+            return new Zupper(id, nome, sobrenome, dataNascimento, celular, endereco, email);
         }
     }
 }

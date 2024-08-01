@@ -8,7 +8,7 @@ import lombok.NoArgsConstructor;
 @Getter
 @NoArgsConstructor
 @AllArgsConstructor
-public class RegistrarUsuarioEnderecoResponse {
+public class RegistrarZupperEnderecoResponse {
 
     private String cep;
 
@@ -24,7 +24,7 @@ public class RegistrarUsuarioEnderecoResponse {
 
     private String uf;
 
-    public RegistrarUsuarioEnderecoResponse(Endereco endereco) {
+    public RegistrarZupperEnderecoResponse(Endereco endereco) {
         this.cep = endereco.getCep();
         this.numero = endereco.getNumero();
         this.logradouro = endereco.getLogradouro();
