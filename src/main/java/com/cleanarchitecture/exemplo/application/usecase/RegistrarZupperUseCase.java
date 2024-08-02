@@ -1,8 +1,8 @@
-package com.cleanarchitecture.exemplo.application.core.usecase;
+package com.cleanarchitecture.exemplo.application.usecase;
 
-import com.cleanarchitecture.exemplo.application.core.domain.Endereco;
-import com.cleanarchitecture.exemplo.application.core.domain.Zupper;
-import com.cleanarchitecture.exemplo.application.core.exception.ZupperJaExistenteException;
+import com.cleanarchitecture.exemplo.application.domain.Endereco;
+import com.cleanarchitecture.exemplo.application.domain.Zupper;
+import com.cleanarchitecture.exemplo.application.exception.ZupperJaExistenteException;
 import com.cleanarchitecture.exemplo.application.ports.in.RegistrarZupperInputPort;
 import com.cleanarchitecture.exemplo.application.ports.out.BuscarEnderecoPeloCepOutputPort;
 import com.cleanarchitecture.exemplo.application.ports.out.NotificarNovoZupperOutputPort;

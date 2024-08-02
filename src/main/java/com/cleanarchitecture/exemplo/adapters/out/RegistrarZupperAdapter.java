@@ -2,7 +2,7 @@ package com.cleanarchitecture.exemplo.adapters.out;
 
 import com.cleanarchitecture.exemplo.adapters.out.repository.ZupperRepository;
 import com.cleanarchitecture.exemplo.adapters.out.repository.entity.ZupperEntity;
-import com.cleanarchitecture.exemplo.application.core.domain.Zupper;
+import com.cleanarchitecture.exemplo.application.domain.Zupper;
 import com.cleanarchitecture.exemplo.application.ports.out.RegistrarZupperOutputPort;
 import org.springframework.stereotype.Component;
 

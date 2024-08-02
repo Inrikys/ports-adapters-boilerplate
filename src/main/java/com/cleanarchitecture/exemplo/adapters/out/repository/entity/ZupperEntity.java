@@ -1,6 +1,6 @@
 package com.cleanarchitecture.exemplo.adapters.out.repository.entity;
 
-import com.cleanarchitecture.exemplo.application.core.domain.Zupper;
+import com.cleanarchitecture.exemplo.application.domain.Zupper;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Getter;

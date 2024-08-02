@@ -1,7 +1,7 @@
 package com.cleanarchitecture.exemplo.adapters.out;
 
 import com.cleanarchitecture.exemplo.adapters.out.producer.message.ZupperRegistradoMessage;
-import com.cleanarchitecture.exemplo.application.core.domain.Zupper;
+import com.cleanarchitecture.exemplo.application.domain.Zupper;
 import com.cleanarchitecture.exemplo.application.ports.out.NotificarNovoZupperOutputPort;
 import org.springframework.kafka.core.KafkaTemplate;
 import org.springframework.stereotype.Component;

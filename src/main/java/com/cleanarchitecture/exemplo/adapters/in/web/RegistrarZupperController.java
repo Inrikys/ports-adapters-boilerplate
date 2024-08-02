@@ -2,7 +2,7 @@ package com.cleanarchitecture.exemplo.adapters.in.web;
 
 import com.cleanarchitecture.exemplo.adapters.in.web.request.RegistrarZupperRequest;
 import com.cleanarchitecture.exemplo.adapters.in.web.response.RegistrarZupperResponse;
-import com.cleanarchitecture.exemplo.application.core.domain.Zupper;
+import com.cleanarchitecture.exemplo.application.domain.Zupper;
 import com.cleanarchitecture.exemplo.application.ports.in.RegistrarZupperInputPort;
 import jakarta.validation.Valid;
 import org.springframework.http.ResponseEntity;

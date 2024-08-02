@@ -1,4 +1,4 @@
-package com.cleanarchitecture.exemplo.application.core.domain;
+package com.cleanarchitecture.exemplo.application.domain;
 
 public class Endereco {
 

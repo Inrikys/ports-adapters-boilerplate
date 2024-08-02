@@ -1,6 +1,6 @@
 package com.cleanarchitecture.exemplo.adapters.out.client.response;
 
-import com.cleanarchitecture.exemplo.application.core.domain.Endereco;
+import com.cleanarchitecture.exemplo.application.domain.Endereco;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;

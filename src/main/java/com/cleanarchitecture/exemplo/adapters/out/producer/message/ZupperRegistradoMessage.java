@@ -1,6 +1,6 @@
 package com.cleanarchitecture.exemplo.adapters.out.producer.message;
 
-import com.cleanarchitecture.exemplo.application.core.domain.Zupper;
+import com.cleanarchitecture.exemplo.application.domain.Zupper;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;

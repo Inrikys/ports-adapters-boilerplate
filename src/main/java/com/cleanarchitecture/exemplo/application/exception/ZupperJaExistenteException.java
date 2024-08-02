@@ -1,4 +1,4 @@
-package com.cleanarchitecture.exemplo.application.core.exception;
+package com.cleanarchitecture.exemplo.application.exception;
 
 public class ZupperJaExistenteException extends RuntimeException{
 

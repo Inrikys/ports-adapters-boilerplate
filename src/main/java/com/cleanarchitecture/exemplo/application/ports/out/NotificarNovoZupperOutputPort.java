@@ -1,6 +1,6 @@
 package com.cleanarchitecture.exemplo.application.ports.out;
 
-import com.cleanarchitecture.exemplo.application.core.domain.Zupper;
+import com.cleanarchitecture.exemplo.application.domain.Zupper;
 
 public interface NotificarNovoZupperOutputPort {
 

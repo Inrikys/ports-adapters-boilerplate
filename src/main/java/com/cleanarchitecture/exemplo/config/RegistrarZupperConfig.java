@@ -1,6 +1,6 @@
 package com.cleanarchitecture.exemplo.config;
 
-import com.cleanarchitecture.exemplo.application.core.usecase.RegistrarZupperUseCase;
+import com.cleanarchitecture.exemplo.application.usecase.RegistrarZupperUseCase;
 import com.cleanarchitecture.exemplo.application.ports.out.BuscarEnderecoPeloCepOutputPort;
 import com.cleanarchitecture.exemplo.application.ports.out.NotificarNovoZupperOutputPort;
 import com.cleanarchitecture.exemplo.application.ports.out.RegistrarZupperOutputPort;

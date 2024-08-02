@@ -2,7 +2,7 @@ package com.cleanarchitecture.exemplo.adapters.out;
 
 import com.cleanarchitecture.exemplo.adapters.out.client.BuscarEnderecoPeloCepClient;
 import com.cleanarchitecture.exemplo.adapters.out.client.response.BuscarEnderecoPeloCepResponse;
-import com.cleanarchitecture.exemplo.application.core.domain.Endereco;
+import com.cleanarchitecture.exemplo.application.domain.Endereco;
 import com.cleanarchitecture.exemplo.application.ports.out.BuscarEnderecoPeloCepOutputPort;
 import org.springframework.stereotype.Component;
 
